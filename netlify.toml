@@ -1,0 +1,12 @@
+[build]
+  ignore = "false"
+
+[[headers]]
+  for = "/*.m3u8"
+  [headers.values]
+    Content-Type = "application/vnd.apple.mpegurl"
+
+[[headers]]
+  for = "/*.ts"
+  [headers.values]
+    Content-Type = "video/mp2t"
